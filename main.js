@@ -6,12 +6,15 @@ pageBody.insertBefore(main, scriptTag);
 var header = document.createElement('h1');
 main.appendChild(header);
 
-var ul = document.createElement('ul');
-main.appendChild(ul);
+var unorderedList = document.createElement('ul');
+main.appendChild(unorderedList);
 
-var li = document.createElement('li');
-ul.appendChild(li);
+var info = document.createElement('li');
+unorderedList.appendChild(info);
 
 var headerText = document.createTextNode('This is the header text!');
 header.appendChild(headerText);
-var listItem = document.createTextNode('This is the list item!');
+
+var listItemText = document.createTextNode('This is the list item!');
+info.appendChild(listItemText);
+
