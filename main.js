@@ -24,5 +24,10 @@ main.classList.add('text-center');
 
 var link = document.createElement('a');
 var linkListItem = document.createElement('li');
-link.append('linkListItem');
-linkListItem.append('unorderedList');
+linkListItem.append(link);
+unorderedList.append(linkListItem);
+
+var linkText = document.createTextNode('This is the my link');
+link.append(linkText);
+
+link.href = 'https://www.google.com';
