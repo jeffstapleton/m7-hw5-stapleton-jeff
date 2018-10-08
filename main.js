@@ -31,3 +31,6 @@ var linkText = document.createTextNode('This is the my link');
 link.append(linkText);
 
 link.href = 'https://www.google.com';
+
+var notLinkListItem = linkListItem.previousElementSibling;
+notLinkListItem.classList.add('orange');
