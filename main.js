@@ -6,8 +6,12 @@ pageBody.insertBefore(main, scriptTag);
 var header = document.createElement('h1');
 main.appendChild(header);
 
-var header = document.createElement('ul');
-main.appendChild(header);
+var ul = document.createElement('ul');
+main.appendChild(ul);
 
-var header = document.createElement('li');
-main.appendChild(header);
+var li = document.createElement('li');
+ul.appendChild(li);
+
+var headerText = document.createTextNode('This is the header text!');
+header.appendChild(headerText);
+var listItem = document.createTextNode('This is the list item!');
